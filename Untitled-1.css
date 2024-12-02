@@ -1,0 +1,289 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.home, .shop, .contact-us, .about, .SP {
+    height: 100vh;
+    background: url('logoMM3.png') no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-size: 1540px;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;    
+    position: relative;
+} 
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+    background-color: #e0dddb;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px;
+}
+
+.navbar a {
+    font-size: 18px;
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .3s;
+    font-family: Oswald;
+    margin: 0 30px;
+}
+
+.navbar a:hover,
+.navbar a.active {    
+    color: #b36e34;
+}
+
+.logo {
+    font-size: 25px;
+    color: #b36e34;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.button{
+    background-color: #b36e34;
+    color: #020202;
+    border-radius: 15px;
+    padding: 8px 15px;
+    font-weight: bold;
+}
+
+.home-content h1{
+    font-size: 120px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: 12%;
+    margin-top: -10%;
+    position: absolute;
+}
+.home-content h4{
+    font-size: 25px;
+    margin-left: 21%;
+    margin-top: -2%;
+    position: absolute;
+}
+
+.button2{
+    width: 80px;
+    background-color: #b36e34;
+    border-radius: 15px;
+    padding: 10px 20px;
+    margin-left: 30%;
+    font-weight: bold;
+    position: absolute;
+    bottom: 15%;
+}
+
+
+
+.shop {
+    padding: 50px;
+    text-align: center;
+    background-color: #e0dddb;
+}
+
+.product-grid {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.product-item {
+    width: 200px;
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.product-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.product-image {
+    width: 70%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.price {
+    font-size: 18px;
+    color: #b36e34;
+    margin-bottom: 10px;
+}
+
+.quantity {
+    width: 60px;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #b36e34;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #9f5c2d;
+}
+
+
+.about-card{
+    padding: 50px;
+    height: 500px;
+    margin-right: 10%;
+    text-align: center;
+    background-color: rgba(179, 110, 52, 0.75);
+    position: absolute;
+    border-radius: 10px;
+}
+
+.about-content h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: #fff;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.about-content p {
+    font-size: 20px;
+    line-height: 2.5;
+    margin-bottom: 20px;
+    color: #fff;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: justify;
+    
+}
+
+
+.contact-card{
+    padding: 50px;
+    height: 560px;
+    margin-left: 11%;
+    text-align: center;
+    background-color: rgba(179, 110, 52, 0.75);
+    position: relative;
+    border-radius: 10px;
+}
+
+.contact-content h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: #fff;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.contact-content p {
+    font-size: 19px;
+    margin-bottom: 20px;
+    color: #fff;
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+
+.contact-content h3 {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #fff;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 35px;
+}
+
+.contact-content h4 {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #fff;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 20px;
+}
+
+
+.navbar a.active {
+    color: #b36e34;
+    font-weight: bold;
+}
+
+
+.sign-up-container {
+    padding: 20px;  
+    background-color: rgba(179, 110, 52, 0.85);
+    border-radius: 10px;
+    text-align: center;
+    width: 700px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: auto;  
+}
+
+.sign-up-container h2 {
+    font-size: 30px;  
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.sign-up-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+
+.sign-up-form label {
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 5px;
+    align-self: flex-start;
+    margin-left: 10%;
+}
+
+.sign-up-form input {
+    width: 80%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 15px; 
+}
+
+.sign-up-form input[type="checkbox"] {
+    width: auto;
+    margin-right: 10px;
+}
+
+.sign-up-form button {
+    background-color: #b36e34;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 15px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.sign-up-form button:hover {
+    background-color: #9f5c2d;
+}

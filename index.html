@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="Untitled-1.css">
+        <title>MAAM MARITA</title>
+    </head>
+    <body>
+        <header class="header">
+            <a href="#home" class="logo">DEJABREW</a>
+            <nav class="navbar">
+                <a href="#home" class="nav-link">HOME</a>
+                <a href="#shop" class="nav-link">SHOP</a>
+                <a href="#contact-us" class="nav-link">CONTACT US</a>
+                <a href="#about" class="nav-link">ABOUT</a>
+                <a href="#SP"><button class="button">SIGN UP</button></a>
+            </nav>
+        </header>
+
+        <section id="home" class="home">
+            <div class="home-content">
+                <h1>DEJA BREW</h1>
+                <h4>discover the real taste of coffee</h4>
+            </div> 
+
+            <nav class="menu">
+              <a href="#shop"><button class="button2">MENU</button></a>
+
+            </nav>
+        </section>
+
+        <section id="shop" class="shop">
+            <h2>ICED COFFEE</h2>
+            <div class="product-grid">
+                <div class="product-item">
+                    <img src="logoMM1.png" alt="Iced Coffee 1" class="product-image">
+                    <h3>Iced Caramel Latte</h3>
+                    <p class="price" data-price="15.99">$15.99</p>
+                    <label for="quantity1">Quantity: </label>
+                    <input type="number" id="quantity1" value="1" min="1" class="quantity">
+                    <button class="button" onclick="addToCart('Iced Caramel Latte', 15.99, 'quantity1')">Add to Cart</button>
+                </div>
+                <div class="product-item">
+                    <img src="logoMM1.png" alt="Iced Coffee 2" class="product-image">
+                    <h3>Iced Mocha</h3>
+                    <p class="price" data-price="17.99">$17.99</p>
+                    <label for="quantity2">Quantity: </label>
+                    <input type="number" id="quantity2" value="1" min="1" class="quantity">
+                    <button class="button" onclick="addToCart('Iced Mocha', 17.99, 'quantity2')">Add to Cart</button>
+                </div>
+                <div class="product-item">
+                    <img src="logoMM1.png" alt="Iced Coffee 3" class="product-image">
+                    <h3>Iced Vanilla Latte</h3>
+                    <p class="price" data-price="16.99">$16.99</p>
+                    <label for="quantity3">Quantity: </label>
+                    <input type="number" id="quantity3" value="1" min="1" class="quantity">
+                    <button class="button" onclick="addToCart('Iced Vanilla Latte', 16.99, 'quantity3')">Add to Cart</button>
+                </div>
+                <div class="product-item">
+                    <img src="logoMM1.png" alt="Iced Coffee 4" class="product-image">
+                    <h3>Iced Matcha Latte</h3>
+                    <p class="price" data-price="18.99">$18.99</p>
+                    <label for="quantity4">Quantity: </label>
+                    <input type="number" id="quantity4" value="1" min="1" class="quantity">
+                    <button class="button" onclick="addToCart('Iced Matcha Latte', 18.99, 'quantity4')">Add to Cart</button>
+                </div>
+            </div>
+        
+            <h2>HOT COFFEE</h2>
+            <div class="product-grid">
+                <div class="product-item">
+                    <img src="logoMM1.png" alt="Hot Coffee 1" class="product-image">
+                    <h3>Espresso</h3>
+                    <p class="price" data-price="12.99">$12.99</p>
+                    <label for="quantity5">Quantity: </label>
+                    <input type="number" id="quantity5" value="1" min="1" class="quantity">
+                    <button class="button" onclick="addToCart('Espresso', 12.99, 'quantity5')">Add to Cart</button>
+                </div>
+                <div class="product-item">
+                    <img src="logoMM1.png" alt="Hot Coffee 2" class="product-image">
+                    <h3>Cappuccino</h3>
+                    <p class="price" data-price="14.99">$14.99</p>
+                    <label for="quantity6">Quantity: </label>
+                    <input type="number" id="quantity6" value="1" min="1" class="quantity">
+                    <button class="button" onclick="addToCart('Cappuccino', 14.99, 'quantity6')">Add to Cart</button>
+                </div>
+                <div class="product-item">
+                    <img src="logoMM1.png" alt="Hot Coffee 3" class="product-image">
+                    <h3>Latte</h3>
+                    <p class="price" data-price="13.99">$13.99</p>
+                    <label for="quantity7">Quantity: </label>
+                    <input type="number" id="quantity7" value="1" min="1" class="quantity">
+                    <button class="button" onclick="addToCart('Latte', 13.99, 'quantity7')">Add to Cart</button>
+                </div>
+                <div class="product-item">
+                    <img src="logoMM1.png" alt="Hot Coffee 4" class="product-image">
+                    <h3>Flat White</h3>
+                    <p class="price" data-price="15.49">$15.49</p>
+                    <label for="quantity8">Quantity: </label>
+                    <input type="number" id="quantity8" value="1" min="1" class="quantity">
+                    <button class="button" onclick="addToCart('Flat White', 15.49, 'quantity8')">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+
+        
+        
+   
+        
+
+
+        <section id="contact-us"class="contact-us">
+            <div class="contact-card">
+                <div class="contact-content">
+                    <h2>CONTACT US</h2>
+                    <p>We’d love to hear from you! Whether you have questions, feedback, or just want to say hi,</p>
+                    <p>reach out to us through any of the channels below:</p>
+                    <h3>📍 Visit Us </h3>
+                        <h3> Brew Coffee Shop </h3>
+                       <h3> [123 Brew Lane, Coffee Town, CA 90210]</h3>
+                       <h3>🕒 Opening Hours
+                        Monday to Friday: 7:00 AM - 8:00 PM
+                        Saturday & Sunday: 8:00 AM - 9:00 PM</h3>
+                        <h4>📞 Call Us [+1 123-456-7890] 📧 Email Us[hello@dejabrew.com</h4>
+                        <h4>🌐 Follow Us Online 🌐 DejaBrewCoffeeShop 🌐 DejaBrewCoffeeShop 🌐 DejaBrewCoffeeShop</h4>             
+                </div>
+            </div>      
+        </section>
+
+
+
+        <section id ="about"class="about">
+            <div class="about-card">
+                <div class="about-content">
+                         <h2>ABOUT US</h2>
+                    <p>Welcome to Deja Brew, where every cup feels like a warm hug.
+                    At Deja Brew, we believe that coffee is more than just a beverage—it's an experience. From the moment you step through our 
+                    doors, the aroma of 
+                    freshly brewed coffee, the sound of laughter, and the cozy ambiance come together to 
+                    create a place that feels like home.
+                    Founded in [Year], our mission has always been simple: to serve exceptional coffee, foster meaningful connections, and create a 
+                    space where everyone belongs. We proudly source our beans from sustainable 
+                    farms around the globe, ensuring every cup 
+                    reflects the hard work of farmers and roasters. Each batch is roasted to 
+                    perfection and crafted with love by our talented baristas. 
+                    Whether you prefer a classic espresso or a creative seasonal blend, we have something to delight every palate.</p>
+                </div>
+            </div>           
+        </section>
+
+
+
+
+        <section id="SP" class="SP">
+            <div class="sign-up-container">
+                <h2>Sign Up</h2>
+                <form action="#" method="POST" class="sign-up-form">
+                    <label for="username">Full Name:</label>
+                    <input type="text" id="username" name="username" required placeholder="Enter your full name">
+        
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required placeholder="Enter your email">
+        
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required placeholder="Enter a password">
+        
+                    <label for="confirm-password">Confirm Password:</label>
+                    <input type="password" id="confirm-password" name="confirm-password" required placeholder="Confirm your password">
+        
+                    <label for="terms">
+                        <input type="checkbox" id="terms" name="terms" required> I agree to the <a href="#">Terms & Conditions</a>
+                    </label>
+        
+                    <button type="submit" class="button">Sign Up</button>
+                </form>
+            </div>
+        </section>
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <script>
+   
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
+        });
+    });
+
+    
+    document.querySelectorAll('.nav-link').forEach(link => {
+        link.addEventListener('click', function() {
+            
+            document.querySelectorAll('.nav-link').forEach(link => link.classList.remove('active'));
+            
+           
+            this.classList.add('active');
+        });
+    });
+
+
+
+    let cart = [];
+
+function addToCart(productName, price, quantityId) {
+    const quantity = document.getElementById(quantityId).value;
+    const totalPrice = (price * quantity).toFixed(2);
+
+    // Check if product is already in cart
+    const existingProduct = cart.find(item => item.name === productName);
+    if (existingProduct) {
+        existingProduct.quantity = parseInt(existingProduct.quantity) + parseInt(quantity);
+        existingProduct.totalPrice = (existingProduct.quantity * existingProduct.price).toFixed(2);
+    } else {
+        // Add new product to cart
+        cart.push({
+            name: productName,
+            price: price,
+            quantity: parseInt(quantity),
+            totalPrice: totalPrice
+        });
+    }
+
+    updateCartDisplay();
+}
+
+function updateCartDisplay() {
+    let cartDisplay = document.getElementById('cart-items');
+    if (!cartDisplay) {
+        cartDisplay = document.createElement('div');
+        cartDisplay.id = 'cart-items';
+        document.body.appendChild(cartDisplay);
+    }
+
+    cartDisplay.innerHTML = `
+        <h3>Shopping Cart</h3>
+        <ul>
+            ${cart.map(item => `
+                <li>${item.name} - ${item.quantity} x $${item.price} = $${item.totalPrice}</li>
+            `).join('')}
+        </ul>
+        <strong>Total: $${cart.reduce((acc, item) => acc + parseFloat(item.totalPrice), 0).toFixed(2)}</strong>
+    `;
+}
+
+
+
+
+</script>
+
+
+
+    </body>
+</html>
