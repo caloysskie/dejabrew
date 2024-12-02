@@ -287,3 +287,138 @@ button:hover {
 .sign-up-form button:hover {
     background-color: #9f5c2d;
 }
+
+
+/* Style for the cart container */
+#cart-items {
+    position: fixed; /* Keep it visible as you scroll */
+    top: 20%;
+    right: 20px;
+    width: 300px;
+    padding: 15px;
+    background-color: #f4f4f4;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    overflow-y: auto;
+    max-height: 400px;
+}
+
+/* Shopping cart heading */
+#cart-items h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 5px;
+}
+
+/* Style for the list of items */
+#cart-items ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Individual cart item styling */
+#cart-items ul li {
+    font-size: 1rem;
+    color: #555;
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Price display within cart items */
+#cart-items ul li strong {
+    font-weight: bold;
+    color: #222;
+}
+
+/* Total price at the bottom */
+#cart-items strong {
+    font-size: 1.2rem;
+    color: #000;
+    display: block;
+    margin-top: 10px;
+    text-align: right;
+}
+
+/* Smooth scrolling for the cart */
+#cart-items::-webkit-scrollbar {
+    width: 8px;
+}
+
+#cart-items::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+#cart-items::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+}
+
+#cart-items::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+    #cart-items {
+        width: 90%;
+        right: 5%;
+        top: 10%;
+    }
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover, .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#cart-items button {
+    width: 100%;
+    margin-top: 20px;
+    background-color: #b36e34;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 10px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#cart-items button:hover {
+    background-color: #9f5c2d;
+}
